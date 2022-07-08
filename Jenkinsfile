@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Construindo e subindo container no host') {
             steps {
-                docker-compose up -d --build
+                echo 'docker-compose up -d --build' > /hostpipe/pipe
             }
         }
     }
