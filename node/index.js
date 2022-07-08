@@ -25,7 +25,7 @@ app.get('/', (req,res) => {
         result.forEach(people => {
             resultado += '- ' + people.name + '<br>'
         });
-        res.send('<h1>Full Cycle - v6</h1>' + '<br>' + resultado)
+        res.send('<h1>Full Cycle - v7</h1>' + '<br>' + resultado)
     }).on('error', function(err) {
         console.log("[mysql error]",err);
     });
